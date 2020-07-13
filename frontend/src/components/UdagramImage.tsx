@@ -20,7 +20,7 @@ export class UdagramImage extends React.PureComponent<
           <Card.Header>{this.props.image.title}</Card.Header>
           <Card.Description>{this.props.image.timestamp}</Card.Description>
           {this.props.image.imageUrl && (
-            <Image src="https://serverless-udagram-v2-images-dev.s3.amazonaws.com/1939237b-1b15-4454-b510-6568badb60d5.jpg" ui={false}/>
+            <Image src={this.props.image.imageUrl}/>
           )}
         </Card.Content>
       </Card>
